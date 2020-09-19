@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../sass/index.scss"
+	],
+	"sourcesContent": [
+		"body {\r\n  background: linear-gradient(#B1B6BB, #C3C3C6, #CFCBCA, #CAC2C3, #CCC0C2);\r\n  background-attachment: fixed;\r\n}\r\n\r\n.container {\r\n  background-color: rgba(255, 255, 255, 0.8);\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .container {\r\n    background-color: initial;\r\n  }\r\n}\r\n\r\n.jumbotron {\r\n  background: initial;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,4DAA4D;EACxE,qBAAqB,EAAE,KAAK,GAC7B;;;AAED,AAAA,UAAU,CAAC;EACT,gBAAgB,EAAE,wBAAwB,GAC3C;;AAED,MAAM,EAAE,SAAS,EAAE,KAAK;;EACtB,AAAA,UAAU,CAAC;IACT,gBAAgB,EAAE,OAAO,GAC1B;;;AAGH,AAAA,UAAU,CAAC;EACT,UAAU,EAAE,OAAO,GACpB"
+}
