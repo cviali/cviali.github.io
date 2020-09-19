@@ -144,6 +144,9 @@ body:before{
 	}
 }
 @media screen and (max-width: 768px){
+	.open-in-phone{
+		display: none;
+	}
 	.contact{
 		display: none;
 	}
