@@ -5,6 +5,7 @@ body {
 
 .container{
 	max-width: 1200px;
+	position: relative;
 }
 
 .side-image-logo{
@@ -131,6 +132,17 @@ body:before{
 	transform: rotate(180deg);
 }
 
+.open-in-phone{
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 1400px){
+	.open-in-phone{
+		display: none;
+	}
+}
 @media screen and (max-width: 768px){
 	.contact{
 		display: none;
