@@ -138,6 +138,10 @@ body:before{
 	right: 0;
 }
 
+.open-in-phone-text{
+	font-size: 12px;
+	transform: translateY(-50%);
+}
 @media screen and (max-width: 1400px){
 	.open-in-phone{
 		display: none;
@@ -171,5 +175,10 @@ body:before{
 	}
 	.contact-bottom{
 		display: block;
+	}
+}
+@media screen and (max-width: 500px){
+	.jumbotron{
+		padding: 2rem 0;
 	}
 }
