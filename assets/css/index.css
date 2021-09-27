@@ -29,6 +29,7 @@
 body {
   background: linear-gradient(#B1B6BB, #C3C3C6, #CFCBCA, #CAC2C3, #CCC0C2);
   background-attachment: fixed;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .container{
