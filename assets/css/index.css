@@ -24,12 +24,13 @@
 	animation: fadeinall 1s normal both;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
+	overflow-x: hidden;
 }
 
 body {
   background: linear-gradient(#B1B6BB, #C3C3C6, #CFCBCA, #CAC2C3, #CCC0C2);
   background-attachment: fixed;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .container{
@@ -66,6 +67,17 @@ body {
 
 .card-footer a, .card-footer a:hover{
 	color: inherit;
+}
+
+.no-hover:hover{
+	transform: initial!important;
+	-webkit-box-shadow: initial!important;
+	-moz-box-shadow: initial!important;
+	box-shadow: initial!important;
+}
+
+.swiper-pagination-bullet-active{
+	background: grey;
 }
 
 .small-gradient{
@@ -109,11 +121,29 @@ body {
 	border-radius: 20px 0 0 20px;
 }
 
-.carousel-inner{
+.contact-top {
+	cursor: pointer;
+	width: 100%;
+	max-width: 300px;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	transform: translate(-50%, calc(-100% + 48px));
+	left: 50%;
+	margin: 0 31px;
+	background: white;
+	color: #212529;
+	padding: 0 1.25rem;
+	border-radius: 0 0 20px 20px;
+	-webkit-box-shadow: 0px -2px 5px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px -2px 5px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px -2px 5px -2px rgba(0, 0, 0, 0.75);
+	transition: 0.3s;
 }
 
 .contact-bottom{
 	display: none;
+	z-index: 100;
 	position: fixed;
 	bottom: 0;
 	transform: translateY(calc(100% - 48px));
@@ -130,7 +160,7 @@ body {
 	transition: 0.3s;
 }
 
-.contact-bottom hr{
+.contact-bottom hr, .contact-top hr{
 	margin: 0 1.25rem;
 }
 
@@ -149,6 +179,10 @@ body:before{
 	z-index: 100;
 }
 
+.contact-top-enabled{
+	transform: translate(-50%, 0);
+}
+
 .contact-enabled{
 	transform: translateY(0);
 }
@@ -157,7 +191,7 @@ body:before{
 	transition: 0.3s;
 }
 
-.chevron-down{
+.chevron-toggle{
 	transform: rotate(180deg);
 }
 
@@ -201,6 +235,9 @@ body:before{
 	}
 	.lead{
 		font-size: 1rem;
+	}
+	.contact-top {
+		display: none;
 	}
 	.contact-bottom{
 		display: block;
