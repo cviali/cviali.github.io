@@ -130,7 +130,7 @@ body {
 	top: 0;
 	transform: translate(-50%, calc(-100% + 48px));
 	left: 50%;
-	margin: 0 31px;
+	margin: 0;
 	background: white;
 	color: #212529;
 	padding: 0 1.25rem;
